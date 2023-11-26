@@ -64,7 +64,7 @@ dependencies:
     version: 3.1.1(react-dom@18.2.0)(react@18.2.0)
   sugar-high:
     specifier: ^0.5.3
-    version: 0.5.3
+    version: 0.5.4
   swr:
     specifier: ^2.2.4
     version: 2.2.4(react@18.2.0)
@@ -551,7 +551,7 @@ packages:
     dev: false
 
   /buffer-equal-constant-time@1.0.1:
-    resolution: {integrity: sha1-+OcRMvf/5uAaXJaXpMbz5I1cyBk=}
+    resolution: {integrity: sha512-zRpUiDwd/xk6ADqPMATG8vc9VPrkck7T07OIx0gnjmJAnHnTVXNQG3vfvWNuiZIkwu9KrKdA1iJKfsfTVxE6NA==}
     dev: false
 
   /bufferutil@4.0.8:
@@ -640,7 +640,7 @@ packages:
     dev: false
 
   /concat-map@0.0.1:
-    resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
+    resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
     dev: false
 
   /cookie@0.5.0:
@@ -2138,8 +2138,8 @@ packages:
       ts-interface-checker: 0.1.13
     dev: false
 
-  /sugar-high@0.5.3:
-    resolution: {integrity: sha512-0W+B1JCZ62ReIOdHc9TK1QU0ihI+4W4p7PyiZszgagU/UsKUuJYulV+zRDQ0cwX0bZe+8huFg0t+p5MDkMQvZg==}
+  /sugar-high@0.5.4:
+    resolution: {integrity: sha512-PyigJHrh6M9O5eakeBWrWicyvW/4k1KGHklD5Ndl+EiGHL3h5ScEPBIZYPYfih325F4mM5uQ7J5ZviUJzKnmCA==}
     dev: false
 
   /supports-preserve-symlinks-flag@1.0.0:

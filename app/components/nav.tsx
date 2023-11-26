@@ -12,12 +12,15 @@ const navItems = {
   "/work": {
     name: "Work",
   },
-  "/blog": {
-    name: "Blog",
+  "/speaking": {
+    name: "Speaking",
   },
-  "/guestbook": {
-    name: "Guestbook",
-  },
+  // "/blog": {
+  //   name: "Blog",
+  // },
+  // "/guestbook": {
+  //   name: "Guestbook",
+  // },
 };
 
 export function Navbar() {
