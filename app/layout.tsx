@@ -12,10 +12,10 @@ export const metadata: Metadata = {
     default: "Ryan Carson",
     template: "%s | Ryan Carson",
   },
-  description: "Developer, writer, and creator.",
+  description: "Developer, founder, and creator.",
   openGraph: {
     title: "Ryan Carson",
-    description: "Developer, writer, and creator.",
+    description: "Developer, founder, and creator.",
     url: "https://ryancarson.com",
     siteName: "Ryan Carson",
     locale: "en_US",
