@@ -4,10 +4,12 @@ export default function Page() {
   return (
     <>
       <section className="mb-10">
-        <h1 className="font-medium text-2xl mb-8 tracking-tighter">Speaking</h1>
+        <h1 className="font-medium text-2xl mb-8 tracking-tighter">
+          Speaking Engagements
+        </h1>
         <p className="prose prose-neutral dark:prose-invert">
-          I've spoken at many events and on various podcasts over the years.
-          Here are a few highlights ...
+          I've spoken at various events and podcasts over the years. Here are a
+          few highlights ...
         </p>
       </section>
       <section className="mb-10">

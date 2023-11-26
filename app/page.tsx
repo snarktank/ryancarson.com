@@ -43,7 +43,7 @@ export default function Page() {
       <div className="columns-2 sm:columns-3 gap-4 my-8">
         <div className="relative h-40 mb-4">
           <Image
-            alt="Photo of Ryan Carson standing in the Treehouse Office"
+            alt="Ryan Carson speaking at 99u Conference in NYC"
             src={ninenineu}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
@@ -53,7 +53,7 @@ export default function Page() {
         </div>
         <div className="relative h-40 mb-4">
           <Image
-            alt="Me, Lydia, and Delba filming the Next.js Conf keynote"
+            alt="Ryan Carson speaking at Collision Conference in Las Vegas"
             src={collision}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
@@ -63,7 +63,7 @@ export default function Page() {
         </div>
         <div className="relative h-40 mb-4">
           <Image
-            alt="Me standing on stage at Reactathon delivering the keynote"
+            alt="Ryan Carson smiling at the camera in a warm winter coat"
             src={ryancoat}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
@@ -73,7 +73,7 @@ export default function Page() {
         </div>
         <div className="relative h-40 mb-4">
           <Image
-            alt="Me standing on stage at SmashingConf giving a talk about my optimism for the web"
+            alt="Ryan Carson speaking on the Creative Live Show with Chase Jarvis"
             src={creativelive}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
@@ -83,7 +83,7 @@ export default function Page() {
         </div>
         <div className="relative h-40 mb-4">
           <Image
-            alt="Me and Guillermo Rauch on stage for Vercel Ship, answering questions from the Next.js community"
+            alt="Ryan Carson speaking to the camera during an interview with the Atlantic"
             src={atlantic}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
@@ -93,7 +93,7 @@ export default function Page() {
         </div>
         <div className="relative h-40">
           <Image
-            alt="My badge on top of a pile of badges from a Vercel meetup we held"
+            alt="Ryan Carson smiling at the camera in the Treehouse office"
             src={office}
             fill
             sizes="(min-width: 768px) 213px, 33vw"
