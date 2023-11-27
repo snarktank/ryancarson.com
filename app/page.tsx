@@ -1,11 +1,11 @@
 import Image from "next/image";
 import office from "public/images/home/ryan-carson-standing.jpg";
-import ryancoat from "public/images/home/ryan-coat.jpg";
+import ryancoat from "public/images/home/ryan-carson-coat.jpg";
 import creativelive from "public/images/home/creative-live.jpg";
 import twist from "public/images/home/this-week-in-startups.jpg";
-import atlantic from "public/images/home/atlantic.jpg";
 import collision from "public/images/home/collision.jpg";
 import ninenineu from "public/images/home/99u.jpg";
+import { off } from "process";
 
 function ArrowIcon() {
   return (
@@ -32,12 +32,12 @@ export default function Page() {
           Hello! I'm Ryan Carson 👋🙂
         </h1>
         <p className="prose prose-neutral dark:prose-invert">
-          Over the past two decades, I've worked in the tech industry, starting
-          companies, securing investments, and leading teams. One of my proudest
-          achievements is founding Treehouse, an online education platform with
-          1m+ students learning how to code. This endeavor equipped our students
-          with valuable skills and drew an investment of $23 million before its
-          acquisition in 2021.
+          Over the past two decades, I founded three tech companies and led them
+          to successful acquisition. I'm proud and grateful to have founded{" "}
+          <a href="https://teamtreehouse.com">Treehouse</a> which has taught
+          1,000,000+ students how to code. My next adventure is starting,
+          building and launching <a href="https://maple.coach">Maple</a>, an AI
+          one-on-one sales coach.
         </p>
       </section>
       <div className="columns-2 sm:columns-3 gap-4 my-8">
@@ -51,24 +51,34 @@ export default function Page() {
             className="rounded-lg object-cover"
           />
         </div>
-        <div className="relative h-40 mb-4">
+        <div className="relative h-80 mb-4 sm:mb-0">
           <Image
-            alt="Ryan Carson speaking at Collision Conference in Las Vegas"
-            src={collision}
+            alt="Me, Lydia, and Delba filming the Next.js Conf keynote"
+            src={ryancoat}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
             className="rounded-lg object-cover object-[-16px] sm:object-center"
           />
         </div>
-        <div className="relative h-40 mb-4">
+        <div className="relative h-40 sm:h-80 sm:mb-4">
           <Image
-            alt="Ryan Carson smiling at the camera in a warm winter coat"
-            src={ryancoat}
+            alt="Ryan Carson being interviewed on This Week in Startups"
+            src={twist}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
             className="rounded-lg object-cover object-top sm:object-center"
+          />
+        </div>
+        <div className="relative h-40 mb-4 sm:mb-0">
+          <Image
+            alt="Ryan Carson speaking at Collision Conference in Las Vegas"
+            src={collision}
+            fill
+            sizes="(max-width: 768px) 213px, 33vw"
+            priority
+            className="rounded-lg object-cover"
           />
         </div>
         <div className="relative h-40 mb-4">
@@ -81,17 +91,7 @@ export default function Page() {
             className="rounded-lg object-cover"
           />
         </div>
-        <div className="relative h-40 mb-4">
-          <Image
-            alt="Ryan Carson speaking to the camera during an interview with the Atlantic"
-            src={atlantic}
-            fill
-            sizes="(max-width: 768px) 213px, 33vw"
-            priority
-            className="rounded-lg object-cover"
-          />
-        </div>
-        <div className="relative h-40">
+        <div className="relative h-80">
           <Image
             alt="Ryan Carson smiling at the camera in the Treehouse office"
             src={office}

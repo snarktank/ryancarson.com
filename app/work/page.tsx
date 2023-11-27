@@ -8,7 +8,9 @@ export default function Page() {
           created thriving global communities.
         </p>
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
-        <h2 className="font-medium text-xl mb-1 tracking-tighter">Maple</h2>
+        <h2 className="font-medium text-xl mb-1 tracking-tighter">
+          <a href="https://www.maple.coach">Maple</a>
+        </h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm">
           Founder + Developer, 2023
         </p>
@@ -25,7 +27,7 @@ export default function Page() {
         </ul>
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
         <h2 className="font-medium text-xl mb-1 tracking-tighter">
-          Masterschool
+          <a href="https://masterschool.com">Masterschool</a>
         </h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm">
           Entrepreneur in Residence, 2023
@@ -50,14 +52,16 @@ export default function Page() {
           </li>
         </ul>
         <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
-        <h2 className="font-medium text-xl mb-1 tracking-tighter">Treehouse</h2>
+        <h2 className="font-medium text-xl mb-1 tracking-tighter">
+          <a href="https://teamtreehouse.com">Treehouse</a>
+        </h2>
         <p className="text-neutral-600 dark:text-neutral-400 text-sm">
           Founder + CEO, 2010 - 2021
         </p>
         <ul>
           <li>
             Founded Treehouse, raised $23M in investment, scaled the team to
-            100+, and educated 600,000+ students.
+            100+, and educated 1,000,000+ students.
           </li>
           <li>
             Led the team to build a custom online education platform with an NPS
