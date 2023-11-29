@@ -1,11 +1,10 @@
 import Image from "next/image";
 import office from "public/images/home/ryan-carson-standing.jpg";
 import ryancoat from "public/images/home/ryan-carson-coat.jpg";
-import creativelive from "public/images/home/creative-live.jpg";
+import ryan_red from "public/images/home/ryan-red.jpg";
 import twist from "public/images/home/this-week-in-startups.jpg";
 import collision from "public/images/home/collision.jpg";
 import ninenineu from "public/images/home/99u.jpg";
-import { off } from "process";
 
 function ArrowIcon() {
   return (
@@ -83,8 +82,8 @@ export default function Page() {
         </div>
         <div className="relative h-40 mb-4">
           <Image
-            alt="Ryan Carson speaking on the Creative Live Show with Chase Jarvis"
-            src={creativelive}
+            alt="Ryan Carson wearing red"
+            src={ryan_red}
             fill
             sizes="(max-width: 768px) 213px, 33vw"
             priority
