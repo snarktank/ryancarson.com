@@ -1,11 +1,11 @@
-import type { Metadata } from 'next';
-import { Suspense, cache } from 'react';
-import { notFound } from 'next/navigation';
-import { CustomMDX } from 'app/components/mdx';
-import { getViewsCount } from 'app/db/queries';
-import { getBlogPosts } from 'app/db/blog';
-import ViewCounter from '../view-counter';
-import { increment } from 'app/db/actions';
+import type { Metadata } from "next";
+import { Suspense, cache } from "react";
+import { notFound } from "next/navigation";
+import { CustomMDX } from "app/components/mdx";
+import { getViewsCount } from "app/db/queries";
+import { getBlogPosts } from "app/db/blog";
+import ViewCounter from "../view-counter";
+import { increment } from "app/db/actions";
 
 export async function generateMetadata({
   params,
@@ -22,7 +22,7 @@ export async function generateMetadata({
     image,
   } = post.metadata;
   let ogImage = image
-    ? `https://leerob.io${image}`
+    ? `https://ryancarson.com${image}`
     : `https://leerob.io/og?title=${title}`;
 
   return {
@@ -31,9 +31,9 @@ export async function generateMetadata({
     openGraph: {
       title,
       description,
-      type: 'article',
+      type: "article",
       publishedTime,
-      url: `https://leerob.io/blog/${post.slug}`,
+      url: `https://ryancarson.com/blog/${post.slug}`,
       images: [
         {
           url: ogImage,
@@ -41,7 +41,7 @@ export async function generateMetadata({
       ],
     },
     twitter: {
-      card: 'summary_large_image',
+      card: "summary_large_image",
       title,
       description,
       images: [ogImage],
@@ -57,7 +57,7 @@ function formatDate(date: string) {
   let monthsAgo = currentDate.getMonth() - targetDate.getMonth();
   let daysAgo = currentDate.getDate() - targetDate.getDate();
 
-  let formattedDate = '';
+  let formattedDate = "";
 
   if (yearsAgo > 0) {
     formattedDate = `${yearsAgo}y ago`;
@@ -66,13 +66,13 @@ function formatDate(date: string) {
   } else if (daysAgo > 0) {
     formattedDate = `${daysAgo}d ago`;
   } else {
-    formattedDate = 'Today';
+    formattedDate = "Today";
   }
 
-  let fullDate = targetDate.toLocaleString('en-us', {
-    month: 'long',
-    day: 'numeric',
-    year: 'numeric',
+  let fullDate = targetDate.toLocaleString("en-us", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
   });
 
   return `${fullDate} (${formattedDate})`;
@@ -92,19 +92,19 @@ export default function Blog({ params }) {
         suppressHydrationWarning
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'BlogPosting',
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
             headline: post.metadata.title,
             datePublished: post.metadata.publishedAt,
             dateModified: post.metadata.publishedAt,
             description: post.metadata.summary,
             image: post.metadata.image
-              ? `https://leerob.io${post.metadata.image}`
-              : `https://leerob.io/og?title=${post.metadata.title}`,
-            url: `https://leerob.io/blog/${post.slug}`,
+              ? `https://ryancarson.com${post.metadata.image}`
+              : `https://ryancarson.com/og?title=${post.metadata.title}`,
+            url: `https://ryancarson.com/blog/${post.slug}`,
             author: {
-              '@type': 'Person',
-              name: 'Lee Robinson',
+              "@type": "Person",
+              name: "Ryan Carson",
             },
           }),
         }}
