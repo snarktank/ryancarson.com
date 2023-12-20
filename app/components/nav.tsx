@@ -18,8 +18,8 @@ const navItems = {
   "/blog": {
     name: "Blog",
   },
-  "/guestbook": {
-    name: "Guestbook",
+  "/new-dork-city": {
+    name: "New Dork City",
   },
 };
 
