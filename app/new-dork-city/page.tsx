@@ -23,14 +23,14 @@ export default function Page() {
             and <a href="https://ryancarson.substack.com">newsletter</a> for
             anyone interested in using and building with AI.
           </p>
-          <h2 className="text-lg">Subscribe</h2>
-          <iframe
-            src="https://ryancarson.substack.com/embed"
-            width="480"
-            height="150"
-            className="border bg-white"
-          ></iframe>
         </div>
+        <h2 className="text-lg">Subscribe</h2>
+        <iframe
+          src="https://ryancarson.substack.com/embed"
+          width="480"
+          height="150"
+          className="border bg-white"
+        ></iframe>
       </div>
     </>
   );
